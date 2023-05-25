@@ -89,12 +89,12 @@ if (isset($_GET['hapus'])) {
         if ($divisi->deleteTeam($id) > 0) {
             echo "<script>
                 alert('Data berhasil dihapus!');
-                document.location.href = 'divisi.php';
+                document.location.href = 'team.php';
             </script>";
         } else {
             echo "<script>
                 alert('Data gagal dihapus!');
-                document.location.href = 'divisi.php';
+                document.location.href = 'team.php';
             </script>";
         }
     }

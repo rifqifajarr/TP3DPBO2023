@@ -34,7 +34,7 @@ class Team extends DB
 
     function deleteTeam($id)
     {
-        $query = "DELETE FROM teams WHERE team_id = $id";
+        $query = "DELETE FROM teams WHERE id_team = $id";
         return $this->executeAffected($query);
     }
 }
